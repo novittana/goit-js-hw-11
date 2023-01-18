@@ -9,6 +9,24 @@
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header class="header">
+       <form class="search-form" id="search-form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="  Search images..."
+          />
+          <button type="submit" class="search-btn btn">Search</button>
+        </form>
+    </header>
+       <div class="container">
+        <div class="gallery">
+          <!-- Картки зображень -->
+        </div>
+        <button type="button" class="load-more js-load-more is-hidden btn">
+          Load more
+        </button>
+</div>
   </body>
 </html>
